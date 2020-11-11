@@ -1,0 +1,50 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand" href="#">Simple Airbnb</a>
+  <%= link_to "Add Flat", new_flat_path, class:"btn btn-outline-primary" %>
+</nav>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-8">
+      <div class="flat-show-card">
+        <%= @flat.name %>
+        <%= @flat.address %>
+      </div>
+      <div class="flat-show-card">
+        <h3>A bit more about this flat</h3>
+        <p>
+          <%= @flat.description %>
+        </p>
+      </div>
+      <div class="flat-show-card">
+        <h3>Details</h3>
+          <div class="flex">
+            <i class="fas fa-user-friends mr-2"></i>
+            <%= @flat.number_of_guests %>
+          </div>
+          <div class="flex">
+            <i class="fas fa-euro-sign ml-3"></i>
+            <%= @flat.price_per_night %>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="flat-show-card">
+        <h4>Book this place!</h4>
+        <form>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">From:</div>
+            </div>
+            <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="27/10/2020">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</div>

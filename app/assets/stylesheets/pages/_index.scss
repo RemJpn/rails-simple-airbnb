@@ -1,11 +1,24 @@
 // Import page-specific CSS files here.
 @import "home";
 
-.flat-card {
+.card-flat {
   width: 18rem;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color:white;
 }
 
-.flat-card-content {
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-flat-content {
+  height: 100%;
   background-color: #F8F9FA;
+  padding: 24px;
+}
+
+.card-flat-actions {
+  padding: 16px 24px;
 }
